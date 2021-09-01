@@ -33,6 +33,7 @@ const App : React.FC<any> = () => {
         onEndReached, //callback in Flatlist onEndReached
         pageIndex,    //current pageIndex use it to query data
         ListFooterComponent, //use it in Flatlist ListFooterComponent
+        setPageIndex //use it for change pageIndex
     } = usePagination(10); //pageSize = 10
     
     
@@ -88,6 +89,7 @@ const {
     hasMoreData,   //if false show hasMoreData message
     resetData,    //use it to reset data when Flatlist refreshing
     ListFooterComponent, //use it in Flatlist ListFooterComponent
+    setPageIndex //use it for change pageIndex
 } = usePagination(10); //pageSize = 10
 
 ```
